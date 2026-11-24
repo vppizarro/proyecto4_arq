@@ -4,7 +4,7 @@
 **Arquitectura de Computadores — Universidad de los Andes**  
 **Semestre:** 2026-2  
 **Profesor:** Jorge Gómez Mir  
-**Integrantes:** [Completar]
+**Integrantes:** Sebastián Germain, Florencia Osandón, Valentina Pizarro
 
 ## 1. Descripción del proyecto
 
