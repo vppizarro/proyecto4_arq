@@ -1,0 +1,485 @@
+Info: constrained 'i_Clk' to bel 'X0/Y8/io1'
+Warning: unmatched constraint 'i_UART_RX' (on line 5)
+Warning: unmatched constraint 'o_UART_TX' (on line 6)
+Info: constrained 'o_LED[0]' to bel 'X13/Y6/io1'
+Info: constrained 'o_LED[1]' to bel 'X13/Y7/io0'
+Info: constrained 'o_LED[2]' to bel 'X13/Y7/io1'
+Info: constrained 'o_LED[3]' to bel 'X13/Y8/io0'
+Info: constrained 'i_Switch[0]' to bel 'X13/Y4/io1'
+Info: constrained 'i_Switch[1]' to bel 'X13/Y3/io1'
+Info: constrained 'i_Switch[2]' to bel 'X13/Y6/io0'
+Info: constrained 'i_Switch[3]' to bel 'X13/Y4/io0'
+Info: constrained 'o_Segment1_A' to bel 'X0/Y13/io1'
+Info: constrained 'o_Segment1_B' to bel 'X0/Y13/io0'
+Info: constrained 'o_Segment1_C' to bel 'X5/Y17/io1'
+Info: constrained 'o_Segment1_D' to bel 'X6/Y17/io0'
+Info: constrained 'o_Segment1_E' to bel 'X6/Y17/io1'
+Info: constrained 'o_Segment1_F' to bel 'X0/Y14/io1'
+Info: constrained 'o_Segment1_G' to bel 'X0/Y14/io0'
+Info: constrained 'o_Segment2_A' to bel 'X1/Y17/io1'
+Info: constrained 'o_Segment2_B' to bel 'X2/Y17/io1'
+Info: constrained 'o_Segment2_C' to bel 'X3/Y17/io1'
+Info: constrained 'o_Segment2_D' to bel 'X4/Y17/io1'
+Info: constrained 'o_Segment2_E' to bel 'X5/Y17/io0'
+Info: constrained 'o_Segment2_F' to bel 'X0/Y12/io0'
+Info: constrained 'o_Segment2_G' to bel 'X4/Y17/io0'
+Info: constrained 'i_SPI_CS_n' to bel 'X13/Y11/io1'
+Info: constrained 'i_SPI_MOSI' to bel 'X13/Y11/io0'
+Info: constrained 'o_SPI_MISO' to bel 'X13/Y9/io0'
+Info: constrained 'i_SPI_SCLK' to bel 'X13/Y8/io1'
+
+Info: Packing constants..
+Info: Packing IOs..
+Info: Packing LUT-FFs..
+Info:      820 LCs used as LUT4 only
+Info:       98 LCs used as LUT4 and DFF
+Info: Packing non-LUT FFs..
+Info:      160 LCs used as DFF only
+Info: Packing carries..
+Info:        1 LCs used as CARRY only
+Info: Packing indirect carry+LUT pairs...
+Info:        0 LUTs merged into carry LCs
+Info: Packing RAMs..
+Info: Placing PLLs..
+Info: Packing special functions..
+Info: Packing PLLs..
+Info: Promoting globals..
+Info: promoting i_Clk$SB_IO_IN (fanout 282)
+Info: promoting por_cnt_SB_LUT4_I3_O [reset] (fanout 137)
+Info: promoting u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_DFFR_Q_D_SB_LUT4_I3_O [cen] (fanout 99)
+Info: Constraining chains...
+Info:        6 LCs used to legalise carry chains.
+Info: Checksum: 0xfaf757ff
+
+Info: Device utilisation:
+Info: 	         ICESTORM_LC:    1087/   1280    84%
+Info: 	        ICESTORM_RAM:      12/     16    75%
+Info: 	               SB_IO:      27/     72    37%
+Info: 	               SB_GB:       3/      8    37%
+Info: 	         SB_WARMBOOT:       0/      1     0%
+
+Info: Placed 27 cells based on constraints.
+Info: Creating initial analytic placement for 942 cells, random placement wirelen = 15366.
+Info:     at initial placer iter 0, wirelen = 658
+Info:     at initial placer iter 1, wirelen = 566
+Info:     at initial placer iter 2, wirelen = 664
+Info:     at initial placer iter 3, wirelen = 565
+Info: Running main analytical placer, max placement attempts per cell = 159330.
+Info:     at iteration #1, type ALL: wirelen solved = 666, spread = 8157, legal = 8676; time = 0.02s
+Info:     at iteration #2, type ALL: wirelen solved = 612, spread = 7718, legal = 8500; time = 0.02s
+Info:     at iteration #3, type ALL: wirelen solved = 652, spread = 7730, legal = 8806; time = 0.02s
+Info:     at iteration #4, type ALL: wirelen solved = 670, spread = 7880, legal = 8842; time = 0.02s
+Info:     at iteration #5, type ALL: wirelen solved = 1018, spread = 7999, legal = 8921; time = 0.02s
+Info:     at iteration #6, type ALL: wirelen solved = 1057, spread = 7895, legal = 8643; time = 0.02s
+Info:     at iteration #7, type ALL: wirelen solved = 1096, spread = 7873, legal = 8355; time = 0.02s
+Info:     at iteration #8, type ALL: wirelen solved = 1104, spread = 7890, legal = 8814; time = 0.02s
+Info:     at iteration #9, type ALL: wirelen solved = 1172, spread = 7644, legal = 7900; time = 0.02s
+Info:     at iteration #10, type ALL: wirelen solved = 1163, spread = 7496, legal = 8383; time = 0.02s
+Info:     at iteration #11, type ALL: wirelen solved = 1308, spread = 7413, legal = 7819; time = 0.02s
+Info:     at iteration #12, type ALL: wirelen solved = 1567, spread = 7357, legal = 8184; time = 0.02s
+Info:     at iteration #13, type ALL: wirelen solved = 1548, spread = 7269, legal = 7932; time = 0.02s
+Info:     at iteration #14, type ALL: wirelen solved = 1654, spread = 7072, legal = 7739; time = 0.02s
+Info:     at iteration #15, type ALL: wirelen solved = 1909, spread = 7301, legal = 8063; time = 0.01s
+Info:     at iteration #16, type ALL: wirelen solved = 2125, spread = 7296, legal = 8061; time = 0.02s
+Info:     at iteration #17, type ALL: wirelen solved = 2252, spread = 7309, legal = 8080; time = 0.02s
+Info:     at iteration #18, type ALL: wirelen solved = 2415, spread = 7173, legal = 8081; time = 0.02s
+Info:     at iteration #19, type ALL: wirelen solved = 2492, spread = 7055, legal = 7900; time = 0.02s
+Info: HeAP Placer Time: 0.44s
+Info:   of which solving equations: 0.23s
+Info:   of which spreading cells: 0.03s
+Info:   of which strict legalisation: 0.14s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 704, wirelen = 7739
+Info:   at iteration #5: temp = 0.000000, timing cost = 696, wirelen = 6296
+Info:   at iteration #10: temp = 0.000000, timing cost = 665, wirelen = 6042
+Info:   at iteration #15: temp = 0.000000, timing cost = 640, wirelen = 5939
+Info:   at iteration #19: temp = 0.000000, timing cost = 620, wirelen = 5879 
+Info: SA placement time 0.38s
+
+Info: Max frequency for clock 'i_Clk$SB_IO_IN_$glb_clk': 46.66 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                         -> posedge i_Clk$SB_IO_IN_$glb_clk: 1.81 ns
+Info: Max delay posedge i_Clk$SB_IO_IN_$glb_clk -> <async>                        : 3.28 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 3 endpoint(s)
+Info:          + represents [1,3) endpoint(s)
+Info: [ 18568,  19585) |******+
+Info: [ 19585,  20602) |**************************+
+Info: [ 20602,  21619) |************+
+Info: [ 21619,  22636) |*****+
+Info: [ 22636,  23653) |*********+
+Info: [ 23653,  24670) |**********+
+Info: [ 24670,  25687) |*********************+
+Info: [ 25687,  26704) |***********+
+Info: [ 26704,  27721) |******+
+Info: [ 27721,  28738) |+
+Info: [ 28738,  29755) |***+
+Info: [ 29755,  30772) |***+
+Info: [ 30772,  31789) |****+
+Info: [ 31789,  32806) |**+
+Info: [ 32806,  33823) |***+
+Info: [ 33823,  34840) |*********************************+
+Info: [ 34840,  35857) |***********************+
+Info: [ 35857,  36874) |******************+
+Info: [ 36874,  37891) |************************************************************ 
+Info: [ 37891,  38908) |***********************************************+
+Info: Checksum: 0x5ebbcccf
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 3845 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      277        722 |  277   722 |      3205|       0.19       0.19|
+Info:       2000 |      598       1401 |  321   679 |      2660|       0.14       0.33|
+Info:       3000 |      871       2073 |  273   672 |      2077|       0.10       0.44|
+Info:       4000 |     1308       2635 |  437   562 |      1707|       0.14       0.57|
+Info:       5000 |     1750       3170 |  442   535 |      1341|       0.14       0.71|
+Info:       6000 |     2246       3671 |  496   501 |      1026|       0.14       0.86|
+Info:       7000 |     2682       4185 |  436   514 |       642|       0.14       1.00|
+Info:       8000 |     3237       4630 |  555   445 |       447|       0.24       1.24|
+Info:       9000 |     3658       5205 |  421   575 |        67|       0.14       1.39|
+Info:       9172 |     3744       5292 |   86    87 |         0|       0.05       1.43|
+Info: Routing complete.
+Info: Router1 time 1.43s
+Info: Checksum: 0xf3e8518c
+
+Info: Critical path report for clock 'i_Clk$SB_IO_IN_$glb_clk' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  2.15  2.15 Source u_ram.mem.0.0_RAM.RDATA_8
+Info:    routing  0.59  2.73 Net u_ram.mem.0.0_RDATA[0] (3,3) -> (2,3)
+Info:                          Sink u_ram.mem.0.0_RDATA_SB_LUT4_I3_LC.I2
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.38  3.11 Source u_ram.mem.0.0_RDATA_SB_LUT4_I3_LC.O
+Info:    routing  0.59  3.70 Net u_ram.mem.0.0_RDATA_SB_LUT4_I3_O[3] (2,3) -> (1,4)
+Info:                          Sink u_ram.mem.0.0_RDATA_3_SB_LUT4_I3_O_SB_LUT4_O_2_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  4.01 Source u_ram.mem.0.0_RDATA_3_SB_LUT4_I3_O_SB_LUT4_O_2_LC.O
+Info:    routing  0.59  4.60 Net u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I2[2] (1,4) -> (1,4)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I2
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.38  4.98 Source u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  0.59  5.57 Net u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3[3] (1,4) -> (1,3)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  5.88 Source u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_LC.O
+Info:    routing  1.22  7.10 Net u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (1,3) -> (6,3)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  7.42 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_O_LC.O
+Info:    routing  0.59  8.01 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3[2] (6,3) -> (6,3)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  8.32 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_LC.O
+Info:    routing  1.27  9.59 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O[1] (6,3) -> (4,6)
+Info:                          Sink u_ram.mem.0.2_RDATA_7_SB_LUT4_I3_O_SB_LUT4_I1_O_SB_DFFER_Q_D_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_1_I1_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.I1
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.26  9.85 Source u_ram.mem.0.2_RDATA_7_SB_LUT4_I3_O_SB_LUT4_I1_O_SB_DFFER_Q_D_SB_LUT4_I2_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_1_I1_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  9.85 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  9.98 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_LC.COUT
+Info:    routing  0.00  9.98 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.10 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  10.10 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.23 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.23 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.36 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.36 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  10.48 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.48 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I1[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.61 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  10.61 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I1[3] (4,6) -> (4,6)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  10.73 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.20  10.93 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,6) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.06 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.06 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.18 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.18 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.31 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.31 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.44 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.44 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_O_I2_SB_LUT4_I2_O[3] (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.56 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  11.56 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_I2_O_SB_LUT4_O_2_I3_SB_LUT4_O_I2_SB_LUT4_I2_O[3] (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  11.69 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.69 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.81 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  11.81 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI (4,7) -> (4,7)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  11.94 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_LC.COUT
+Info:    routing  0.20  12.14 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3 (4,7) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.26 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_LC.COUT
+Info:    routing  0.00  12.26 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.39 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.39 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.51 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.51 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.64 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.64 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.77 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.77 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  12.89 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  12.89 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.02 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.02 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.14 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.20  13.34 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,8) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.47 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.47 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.59 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.59 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.72 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.72 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  13.84 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.84 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_I2_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_LUT4_O_I3_SB_LUT4_I3_O[3] (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/abc9_model.v:4.9-4.11
+Info:      logic  0.13  13.97 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  13.97 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  14.10 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.00  14.10 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.CIN
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.13  14.22 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.COUT
+Info:    routing  0.26  14.48 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO (4,9) -> (4,9)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.I3
+Info:                          Defined in:
+Info:                               rtl/espino_core/espino_alu.v:65.28-65.53
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/arith_map.v:62.5-70.4
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  14.80 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_LC.O
+Info:    routing  0.59  15.38 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_CARRY_CI_CO_SB_LUT4_I3_O[3] (4,9) -> (5,8)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  15.70 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_O_1_LC.O
+Info:    routing  1.27  16.97 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_I3[1] (5,8) -> (7,12)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  17.29 Source u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O_SB_LUT4_O_LC.O
+Info:    routing  0.59  17.88 Net u_core.u_rf.u_bankA.u_lo_WDATA_SB_LUT4_O_I3_SB_LUT4_O_1_I0_SB_LUT4_I1_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_CARRY_I1_CO_SB_LUT4_I3_O_SB_LUT4_O_2_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_O_I2_SB_LUT4_I1_I3_SB_LUT4_I2_O_SB_LUT4_O_I3_SB_CARRY_CO_CI_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_CARRY_CI_CO_SB_LUT4_I3_O_SB_LUT4_I3_O[1] (7,12) -> (8,13)
+Info:                          Sink u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_2_O_SB_LUT4_O_1_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  18.19 Source u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_2_O_SB_LUT4_O_1_LC.O
+Info:    routing  1.64  19.83 Net u_core.u_rf.u_bankA.u_lo_WE_SB_LUT4_O_I1_SB_LUT4_O_I2_SB_LUT4_I3_O_SB_LUT4_O_I3_SB_LUT4_I3_O_SB_LUT4_I3_2_O[3] (8,13) -> (11,8)
+Info:                          Sink o_LED_SB_DFFER_Q_E_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  20.15 Source o_LED_SB_DFFER_Q_E_SB_LUT4_O_LC.O
+Info:    routing  1.62  21.77 Net o_LED_SB_DFFER_Q_E (11,8) -> (12,7)
+Info:                          Sink o_LED_SB_DFFER_Q_DFFLC.CEN
+Info:      setup  0.10  21.87 Source o_LED_SB_DFFER_Q_DFFLC.CEN
+Info: 9.88 ns logic, 11.99 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge i_Clk$SB_IO_IN_$glb_clk':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source i_SPI_SCLK$sb_io.D_IN_0
+Info:    routing  1.60  1.60 Net i_SPI_SCLK$SB_IO_IN (13,8) -> (12,13)
+Info:                          Sink i_SPI_SCLK_SB_DFFR_D_DFFLC.I0
+Info:                          Defined in:
+Info:                               rtl/pochoco_spi_slave.v:24.22-24.32
+Info:      setup  0.47  2.07 Source i_SPI_SCLK_SB_DFFR_D_DFFLC.I0
+Info: 0.47 ns logic, 1.60 ns routing
+
+Info: Critical path report for cross-domain path 'posedge i_Clk$SB_IO_IN_$glb_clk' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.54  0.54 Source u_ram.mem.1.0_RDATA_SB_LUT4_I3_O_SB_DFFER_Q_D_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_DFFER_E_DFFLC.O
+Info:    routing  1.13  1.67 Net u_ram.mem.1.0_RDATA_SB_LUT4_I3_O_SB_DFFER_Q_D_SB_LUT4_O_I3_SB_LUT4_I2_O_SB_DFFER_E_Q[3] (2,14) -> (2,16)
+Info:                          Sink o_Segment2_E_SB_LUT4_O_LC.I3
+Info:                          Defined in:
+Info:                               /nix/store/1xxkzyxg5npbc5f1jliidx5jksqgiz2n-yosys-0.71/bin/../share/yosys/ice40/cells_map.v:6.21-6.22
+Info:      logic  0.31  1.98 Source o_Segment2_E_SB_LUT4_O_LC.O
+Info:    routing  1.27  3.26 Net o_Segment2_E$SB_IO_OUT (2,16) -> (5,17)
+Info:                          Sink o_Segment2_E$sb_io.D_OUT_0
+Info:                          Defined in:
+Info:                               rtl/pochoco_soc.v:23.21-23.33
+Info: 0.86 ns logic, 2.40 ns routing
+
+Info: Max frequency for clock 'i_Clk$SB_IO_IN_$glb_clk': 45.73 MHz (PASS at 25.00 MHz)
+
+Info: Max delay <async>                         -> posedge i_Clk$SB_IO_IN_$glb_clk: 2.07 ns
+Info: Max delay posedge i_Clk$SB_IO_IN_$glb_clk -> <async>                        : 3.26 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 3 endpoint(s)
+Info:          + represents [1,3) endpoint(s)
+Info: [ 18132,  19165) |******+
+Info: [ 19165,  20198) |*************** 
+Info: [ 20198,  21231) |**********************+
+Info: [ 21231,  22264) |*****+
+Info: [ 22264,  23297) |*******+
+Info: [ 23297,  24330) |********+
+Info: [ 24330,  25363) |****+
+Info: [ 25363,  26396) |+
+Info: [ 26396,  27429) |******+
+Info: [ 27429,  28462) |******************************+
+Info: [ 28462,  29495) |***+
+Info: [ 29495,  30528) |***+
+Info: [ 30528,  31561) |***+
+Info: [ 31561,  32594) |***+
+Info: [ 32594,  33627) |**+
+Info: [ 33627,  34660) |*****+
+Info: [ 34660,  35693) |***********+
+Info: [ 35693,  36726) |********************************************************+
+Info: [ 36726,  37759) |************************************************+
+Info: [ 37759,  38792) |************************************************************ 
+2 warnings, 0 errors
+
+Info: Program finished normally.

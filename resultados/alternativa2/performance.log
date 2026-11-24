@@ -1,0 +1,32 @@
+WARNING: rtl/pochoco_ram.v:36: $readmemh(sw/trade.hex): Not enough words in the file for the requested range [0:511].
+Patrimonio final:          10810
+Ordenes ejecutadas:        42
+Perdida maxima:            450
+No operar:                 10000
+Comprar y mantener:        9695
+Peor caso precio->decision: 188 ciclos (disponibles: 2262)
+Detalle por tick en decisiones.csv
+PASS MISO sin valores X
+PASS el programa escribe DECISION
+PASS el programa lee todos los precios
+PASS la decision llega antes del siguiente tick
+Testbenchs aprobados: 4/4
+IC promedio:             21.234250
+IC maximo:               88
+Ciclos promedio:         51.293550
+CPI promedio medido:     2.415605
+Tiempo promedio (us):    2.051742
+Tiempo maximo (us):      7.520000
+
+=== PERFIL DE CICLOS POR BLOQUE ===
+SPI promedio:        12.498200
+Finanzas promedio:   6.236250
+Momentum promedio:   19.504100
+Buffer promedio:     13.045000
+Otros promedio:      0.010000
+
+=== CICLOS DE ESPERA ===
+Stall promedio:    25.702900
+RF wait promedio:  20.708700
+LSU busy promedio: 4.994200
+tb/tb_performance.sv:280: $finish called at 2000004000000 (1ps)

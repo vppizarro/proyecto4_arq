@@ -1,22 +1,20 @@
-# Virtual Environments & Editor Files
-.venv/
-venv/
-.DS_Store
-
-# Python & Test Artifacts
+# Python
 __pycache__/
 *.py[cod]
-*$py.class
-.pytest_cache/
+.DS_Store
 
-# FPGA Synthesis & Bitstream Artifacts (Yosys / nextpnr / icepack)
-*.json
-*.asc
-*.bin
-*.log
-module_stats/
-
-# Simulation Artifacts (Iverilog / GTKWave / Cocotb)
-sim/sim
+# Simulaciones temporales
 *.vcd
-*.csv
+*.fst
+*.vvp
+a.out
+
+# Archivos temporales del editor
+*.swp
+*.swo
+*~
+
+# Entorno local
+.direnv/
+.env
+/decisiones.csv
